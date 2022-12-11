@@ -1,0 +1,18 @@
+body {
+    /* align-items: center; */
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #f1f1f7;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 40px;
+    width: 400px;
+  }
+  
+ 
