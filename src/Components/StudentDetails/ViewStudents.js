@@ -23,7 +23,7 @@ const ViewStudents = () => {
   };
 
 const editHandler=(item)=>{
-    console.log(item)
+    // console.log(item)
     setDetails(item)
     handleShow()
 }

@@ -4,7 +4,7 @@ import { addDataActions } from "../Store/addDataSlice";
 import "./StudentRegistration.css";
 
 const StudentRegistration = () => {
-  const [image, setImage] = useState();
+  const [image, setImage] = useState("");
   const [fName, setFname] = useState("");
   const [lName, setLname] = useState("");
   const [fatherName, setFatherName] = useState("");
@@ -50,7 +50,7 @@ const StudentRegistration = () => {
             setImage(e.target.files[0])
            
           }}
-          required
+        
         />
         <br />
         First Name:{" "}

@@ -3,9 +3,9 @@ import { useDispatch } from "react-redux";
 import { addDataActions } from "../Store/addDataSlice";
 import "./EditData.css";
 const EditData = (props) => {
-  console.log(props.data.firstName);
+  console.log(props);
 
-  const [image, setImage] = useState(props.data.image);
+  const [image, setImage] = useState();
   const [fName, setFname] = useState(props.data.firstName);
   const [lName, setLname] = useState(props.data.lastName);
   const [fatherName, setFatherName] = useState(props.data.fatherName);
@@ -18,7 +18,7 @@ const EditData = (props) => {
 
   const dispatch=useDispatch()
 
-  const submitHandler = (e) => {
+  const updateHandler = (e) => {
     e.preventDefault();
     const obj = {
       id: Math.random(),
@@ -37,7 +37,7 @@ const EditData = (props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={updateHandler}>
       <div>
         Image:{" "}
         <input
