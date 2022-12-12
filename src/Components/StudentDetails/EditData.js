@@ -21,7 +21,7 @@ const EditData = (props) => {
   const updateHandler = (e) => {
     e.preventDefault();
     const obj = {
-      id: Math.random(),
+      id: props.data.id,
       image: image,
       FirstName: fName,
       LastName: lName,
